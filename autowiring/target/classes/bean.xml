@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean class="com.autowiring.Employee" id="emp1" autowire="constructor">
+    <constructor-arg name="empId" value="2"></constructor-arg>
+    <constructor-arg name="empName" value="Hari"></constructor-arg>
+    <constructor-arg name="empEmail" value="tharusekar26@gmail.com"></constructor-arg>
+    </bean>
+    <bean class="com.autowiring.Pancard" id="pancard1">
+    <property name="panHolderName" value="HARI"></property>
+    <property name="panNumber" value="2003"></property>
+    </bean>
+
+</beans>
